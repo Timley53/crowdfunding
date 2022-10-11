@@ -73,6 +73,7 @@ menuBAr.addEventListener("click", function (e) {
   overlay.classList.toggle("none");
 
   ulWrapper.classList.toggle("display");
+  document.body.classList.toggle("stop-scrolling");
 
   setTimeout(() => {
     ulWrapper.classList.toggle("opacity");

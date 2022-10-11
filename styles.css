@@ -616,7 +616,7 @@ footer {
     justify-content: space-between;
     border: 0;
     position: relative;
-    z-index: 5;
+    z-index: 20;
   }
   .sticky {
     position: fixed;
@@ -638,7 +638,7 @@ footer {
     transition: all 1s;
     display: none;
     opacity: 0;
-    z-index: 100;
+    z-index: 20;
   }
   .nav-links {
     width: 100%;

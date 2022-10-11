@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="./script.js"></script>
+    <title>Crowdfunding-page</title>
+  </head>
+  <body>
+    <div class="overlay none">
+      <section class="modal none" role="modal">
+        <button class="close-modal"><i class="fa-solid fa-xmark"></i></button>
+        <header>
+          <h2>Back This Project</h2>
+          <p>
+            Want to support us in bringing Mastercraft Bamboo Monitor Riser out
+            in the world
+          </p>
+        </header>
+
+        <!-- pledge 1 -->
+
+        <div class="pledge-type-noReward">
+          <div class="input--details">
+            <label class="input-label no-reward-label">
+              <input
+                type="radio"
+                name="pledge-radio"
+                id="no-reward-input"
+                class="pledges-input"
+              />
+              <span class="checkmark"></span>
+            </label>
+
+            <div class="pledge-details">
+              <h4>Pledge With No Reward</h4>
+              <p>
+                Choose to support us without a reward if you simply believe in
+                our project. As a backer, you will be signed up to receive
+                product updates via email.
+              </p>
+            </div>
+          </div>
+
+          <!-- pledge 1 enter plede -->
+
+          <div class="enter-pledge no-reward-amt none">
+            <p>Enter your pledge</p>
+
+            <div class="amt-btn">
+              <input
+                type="number"
+                name="amout"
+                id="no-reward-amount"
+                placeholder="$"
+                class="pledge--amount"
+              />
+              <button class="pledge-ctn-btn no-reward-btn">Continue</button>
+            </div>
+          </div>
+          <div class="bamboo-low low none">least amout to donate is 75$</div>
+        </div>
+
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!-- pledge---2 -->
+
+        <div class="pledge-type-noReward Bamboo--pledge">
+          <div class="input--details">
+            <label class="input-label bamboo">
+              <input
+                type="radio"
+                name="pledge-radio"
+                id="bamboo-reward-input"
+                class="pledges-input"
+              />
+
+              <span class="checkmark"></span>
+            </label>
+
+            <div class="pledge-details pledge-details2">
+              <span class="head">Pledge With No Reward</span>
+              <span>Pledges $25 or more</span>
+              <p>
+                Choose to support us without a reward if you simply believe in
+                our project. As a backer, you will be signed up to receive
+                product updates via email.
+              </p>
+
+              <div class="left-sup">
+                <span class="bamboo-left">101</span>
+                <sup>left</sup>
+              </div>
+            </div>
+          </div>
+
+          <!--  -->
+
+          <div class="enter-pledge bamboo-amt none">
+            <p>Enter your pledge</p>
+
+            <div class="amt-btn">
+              <input
+                type="number"
+                name="amout"
+                id="bamboo-amount"
+                placeholder="$"
+                class="pledge--amount"
+              />
+              <button class="pledge-ctn-btn bamboo-btn">Continue</button>
+            </div>
+          </div>
+
+          <div class="bamboo-low low none">least amout to donate is 75$</div>
+        </div>
+
+        <!--  -->
+        <!--  -->
+        <!--pledge 3  -->
+        <div class="pledge-type-noReward blackE--pledge">
+          <div class="input--details">
+            <label class="input-label BlackE">
+              <input
+                type="radio"
+                name="pledge-radio"
+                id="blackE-reward-input"
+                class="pledges-input"
+              />
+
+              <span class="checkmark"></span>
+            </label>
+
+            <div class="pledge-details pledge-details3">
+              <span class="head">Black Edition Stand</span>
+              <span>Pledges $75 or more</span>
+              <p>
+                Choose to support us without a reward if you simply believe in
+                our project. As a backer, you will be signed up to receive
+                product updates via email.
+              </p>
+
+              <div class="left-sup">
+                <span class="black-edition-left">62</span>
+                <sup>left</sup>
+              </div>
+            </div>
+          </div>
+
+          <!--  -->
+
+          <div class="enter-pledge blackE-amt none">
+            <p>Enter your pledge</p>
+
+            <div class="amt-btn">
+              <input
+                type="number"
+                name="amout"
+                id="blacE-amount"
+                placeholder="$"
+                class="pledge--amount"
+              />
+              <button class="pledge-ctn-btn blackE-btn">Continue</button>
+            </div>
+          </div>
+
+          <div class="blackE-low low none">least amout to donate is 75$</div>
+        </div>
+
+        <!--  -->
+        <!--  -->
+
+        <!--pledge 4  -->
+        <div class="pledge-type-noReward mahhogany--pledge">
+          <div class="input--details">
+            <label class="input-label mahhogany">
+              <input
+                type="radio"
+                name="pledge-radio"
+                id="mahhogany-reward-input"
+                class="pledges-input"
+                disabled
+              />
+
+              <span class="checkmark"></span>
+            </label>
+
+            <div class="pledge-details pledge-details4">
+              <span class="head">Black Edition Stand</span>
+              <span>Pledges $75 or more</span>
+              <p>
+                Choose to support us without a reward if you simply believe in
+                our project. As a backer, you will be signed up to receive
+                product updates via email.
+              </p>
+
+              <div class="left-sup">
+                <span class="mahhogany-left">0</span>
+                <sup>left</sup>
+              </div>
+            </div>
+          </div>
+
+          <!--  -->
+
+          <div class="enter-pledge mahhogany-amt none">
+            <p>Enter your pledge</p>
+
+            <div class="amt-btn">
+              <input
+                type="number"
+                name="amout"
+                id="mahhogany-amount"
+                placeholder="$"
+                class="pledge--amount"
+                disabled
+              />
+              <button class="pledge-ctn-btn mahhogany-btn" disabled>
+                Continue
+              </button>
+            </div>
+          </div>
+
+          <div class="mahhogany-low low none">least amout to donate is 75$</div>
+        </div>
+        <!--  -->
+      </section>
+    </div>
+    <!-- modal none -->
+
+    <!--  -->
+
+    <button class="top">
+      <a href="#top"> <i class="fa-solid fa-angle-up"></i> </a>
+    </button>
+
+    <!-- container -->
+    <div class="container">
+      <header class="header" id="top">
+        <nav class="nav">
+          <a href="#"> <h2>crowdfund</h2></a>
+
+          <button class="menu-bar"><i class="fa-solid fa-bars"></i></button>
+
+          <div class="ul-wrapper">
+            <ul
+              class="nav-links"
+              style="border-radius: 10rem"
+              role="navigation"
+            >
+              <li class="nav-link"><a href="#" class="link">About</a></li>
+              <li class="nav-link"><a href="#" class="link">Discover</a></li>
+              <li class="nav-link"><a href="#" class="link">Get started</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="section--1">
+          <img
+            src="./images/logo-mastercraft.svg"
+            alt="logo-mastercraft"
+            class="logo"
+          />
+          <h2>Mastercracft Bamboo Monitor Riser</h2>
+          <p>
+            A beautiful & handcrafted monitor stand to reduce neck and eye
+            strain
+          </p>
+
+          <div class="bookmark-div">
+            <button class="back-project show-modal">Back this project</button>
+
+            <button class="bookmark">
+              <span class="tag"><i class="fa-solid fa-bookmark"></i></span>
+              <span class="bookmarked-writing">Bookmark</span>
+            </button>
+          </div>
+        </section>
+        <!-- section--2 -->
+        <section class="section--2">
+          <div class="backed-details">
+            <div class="amount-backed">
+              <h2>$89,914</h2>
+              <p>of $100,000 backed</p>
+            </div>
+
+            <div class="backed-count">
+              <h2>5,007</h2>
+              <p>total backers</p>
+            </div>
+
+            <div class="back-days">
+              <h2>57</h2>
+              <p>day(s) left</p>
+            </div>
+          </div>
+          <br />
+          <br />
+
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+        </section>
+
+        <!-- section--3 -->
+        <div class="section--3">
+          <h2>About This Project</h2>
+          <p>
+            The Mastercraft Bamboo Monitor Riser is a sturdy and stylish
+            platform that elevates your screen to a more comfortable viewing
+            height. Placing your monitor at eye level has the potential to
+            improve your posture and make you more comfortable while at work,
+            helping you stay focused on the task at hand. <br />
+            <br />
+            Featuring artisan craftsmanship, the simplicity of design creates
+            extra desk space below your computer to allow notepads, pens, and
+            USB sticks to be stored under the stand.
+            <br />
+            <br />
+          </p>
+
+          <!-- ---------- -->
+          <div class="pledge-div bamboo-stand">
+            <header>
+              <h3>Bamboo Stand</h3>
+              <p>Pledge $23 or more</p>
+            </header>
+            <p>
+              You get an ergonomic stand made of natural bamboo. You've helped
+              us launch our promotional campaign, and you'll be added to a
+              special Backer member list.
+            </p>
+
+            <div class="left-reward">
+              <div class="left">
+                <span class="bamboo-no bamboo">101</span> <sup>left</sup>
+              </div>
+
+              <button class="reward-btn reward-bamboo show-modal">
+                Select reward
+              </button>
+            </div>
+          </div>
+
+          <!-- --------- -->
+
+          <div class="pledge-div black-edition-stand">
+            <header>
+              <h3>Black Edition Stand</h3>
+              <p>Pledge $75 or more</p>
+            </header>
+            <p>
+              You get a Black Special Edition computer stand and a personal
+              thank you. You'll be added to our Backer member list. Shipping is
+              included.
+            </p>
+
+            <div class="left-reward">
+              <div class="left">
+                <span class="bamboo-no black-edition">101</span> <sup>left</sup>
+              </div>
+
+              <button class="reward-btn reward-back-edition show-modal">
+                Select reward
+              </button>
+            </div>
+          </div>
+
+          <!-- --------- -->
+
+          <div class="pledge-div mahogany">
+            <header>
+              <h3>Mahogany Special Edition</h3>
+              <p>Pledge $200 or more</p>
+            </header>
+            <p>
+              You get two Special Edition Mahogany stands, a Backer T-Shirt, and
+              a personal thank you. You’ll be added to our Backer member list.
+              Shipping is included.
+            </p>
+
+            <div class="left-reward">
+              <div class="left">
+                <span class="bamboo-no black-edition">0</span> <sup>left</sup>
+              </div>
+
+              <button class="reward-btn mahogany-btn show-modal">
+                Select reward
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="footer-table">
+          <div class="crowdfund-links">
+            <p>
+              <a href="">About</a> | <a href="">Discover</a> |
+              <a href="">Get Started</a> <br />
+              Crowdfund &copy; 2022. All Rights Reserved
+            </p>
+          </div>
+
+          <div class="address">
+            <a href="https://wa.me/message/QF4ERDN5JIYUP!"
+              ><i class="fa-brands fa-whatsapp"></i> ---Whatsapp</a
+            >
+            <a href="tel:+2349056499020"
+              ><i class="fa-solid fa-phone-volume"></i>--- +2349056499020</a
+            >
+            <a href="mailto:kuntimmy@gmail.com"
+              ><i class="fa-solid fa-envelope"></i>---kuntimmy@gmail.com</a
+            >
+            <a href="https://www.linkedin.com/in/timileyin-adedokun-35b36b219"
+              ><i class="fa-brands fa-linkedin"></i>--- Linkedin</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -70,6 +70,8 @@ ObserverHeader.observe(header);
 
 //////////
 menuBAr.addEventListener("click", function (e) {
+  overlay.classList.toggle("none");
+
   ulWrapper.classList.toggle("display");
 
   setTimeout(() => {

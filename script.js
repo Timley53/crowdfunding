@@ -20,6 +20,7 @@ const blackE_btn = document.querySelector(".blackE-btn");
 const completed = document.querySelector(".completed");
 const got_it = document.querySelector(".got-it");
 const progress = document.querySelector(".progress");
+const pledge_type_noReward = document.querySelectorAll(".pledge-type-noReward");
 
 /////////////
 //////////////////
@@ -58,7 +59,11 @@ let total_backers_no = 5007;
 let bamboo_amount_left_no = 101;
 let black_edition_amount_left_no = 62;
 ///////////////////
-
+pledge_type_noReward.forEach((el) => {
+  el.addEventListener("click", function () {
+    el.style.border = "2px solid var(--primary-moderate-color)";
+  });
+});
 ///////////
 const numberFormat = new Intl.NumberFormat("en");
 // ///////
@@ -224,7 +229,7 @@ no_reward_btn.addEventListener("click", function (e) {
     // total_backers.textContent = numberFormat.format(total_backers_no);
 
     donateFxn();
-    if (total_backed_no > 100000) {
+    if (total_backed_no >= 100000) {
       progress.style.width = `100%`;
     } else {
       progress.style.width = `${back_percent(no_reward_no)}%`;
@@ -256,7 +261,7 @@ bamboo_btn.addEventListener("click", function () {
       el.textContent = bamboo_amount;
     });
 
-    if (total_backed_no > 100000) {
+    if (total_backed_no >= 100000) {
       progress.style.width = `100%`;
     } else {
       progress.style.width = `${back_percent(bamboo_reward_no)}%`;
@@ -271,9 +276,9 @@ bamboo_btn.addEventListener("click", function () {
 
 blackE_btn.addEventListener("click", function () {
   let blackE_reward_no = Number(blackEAmount_input.value);
-  console.log(blackE_reward_no);
+  //   console.log(blackE_reward_no);
   if (blackE_reward_no >= 75) {
-    // total_backed_no += blackE_reward_no;
+    total_backed_no += blackE_reward_no;
     // console.log(total_backed_no);
     // total_amount_backed.textContent = `$${numberFormat.format(
     //   total_backed_no
@@ -281,13 +286,13 @@ blackE_btn.addEventListener("click", function () {
 
     // total_backers_no++;
     // total_backers.textContent = numberFormat.format(total_backers_no);
-    donateFxn;
+    donateFxn();
     black_edition_amount--;
     black_edition_amount_left.forEach((el) => {
       el.textContent = black_edition_amount;
     });
 
-    if (total_backed_no > 100000) {
+    if (total_backed_no >= 100000) {
       progress.style.width = `100%`;
     } else {
       progress.style.width = `${back_percent(blackE_reward_no)}%`;

@@ -569,6 +569,32 @@ footer {
   border-radius: 30px;
   color: white;
 } */
+.completed {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 1.5rem;
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  border-radius: 7px;
+}
+.completed p {
+  text-align: center;
+}
+.completed button {
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: medium;
+  cursor: pointer;
+}
 .none {
   display: none;
 }
@@ -1058,7 +1084,7 @@ footer {
   }
 
   .pledge-details2 .head {
-    margin: 0 5rem 0 0;
+    margin: 0 9rem 0 0;
     width: 100%;
     line-height: 30px;
     font-weight: bolder;
@@ -1080,6 +1106,7 @@ footer {
   .mahhogany-btn {
     cursor: not-allowed;
   }
+
   .stop-scrolling {
     height: 100%;
     overflow: hidden;
@@ -1092,6 +1119,33 @@ footer {
     background-color: rgba(0, 0, 0, 0.439);
     backdrop-filter: blur(5px);
     z-index: 15;
+  }
+  .completed {
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 1.5rem;
+    position: absolute;
+    left: 4%;
+    top: 20%;
+    border-radius: 7px;
+    z-index: 16;
+  }
+  .completed p {
+    text-align: center;
+  }
+  .completed button {
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: medium;
+    cursor: pointer;
   }
   .none {
     display: none;

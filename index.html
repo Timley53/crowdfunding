@@ -68,12 +68,12 @@
                 name="amout"
                 id="no-reward-amount"
                 placeholder="$"
-                class="pledge--amount"
+                class="pledge--amount no-pledge-amount"
               />
               <button class="pledge-ctn-btn no-reward-btn">Continue</button>
             </div>
           </div>
-          <div class="bamboo-low low none">least amout to donate is 75$</div>
+          <div class="noReward-low low none">least amout to donate is 1$</div>
         </div>
 
         <!--  -->
@@ -95,8 +95,10 @@
             </label>
 
             <div class="pledge-details pledge-details2">
-              <span class="head">Pledge With No Reward</span>
-              <span>Pledges $25 or more</span>
+              <span class="head">Bamboo Stand </span>
+
+              <span>Pledges $75 or more</span>
+
               <p>
                 Choose to support us without a reward if you simply believe in
                 our project. As a backer, you will be signed up to receive
@@ -104,7 +106,7 @@
               </p>
 
               <div class="left-sup">
-                <span class="bamboo-left">101</span>
+                <span class="bamboo-left bamboo-amount-left">101</span>
                 <sup>left</sup>
               </div>
             </div>
@@ -121,13 +123,14 @@
                 name="amout"
                 id="bamboo-amount"
                 placeholder="$"
-                class="pledge--amount"
+                class="pledge--amount bamboo-amount"
+                value="25"
               />
               <button class="pledge-ctn-btn bamboo-btn">Continue</button>
             </div>
           </div>
 
-          <div class="bamboo-low low none">least amout to donate is 75$</div>
+          <div class="bamboo-low low none">least amout to donate is 25$</div>
         </div>
 
         <!--  -->
@@ -146,7 +149,7 @@
               <span class="checkmark"></span>
             </label>
 
-            <div class="pledge-details pledge-details3">
+            <div class="pledge-details pledge-details2">
               <span class="head">Black Edition Stand</span>
               <span>Pledges $75 or more</span>
               <p>
@@ -156,7 +159,9 @@
               </p>
 
               <div class="left-sup">
-                <span class="black-edition-left">62</span>
+                <span class="black-edition-left black-edition-amount-left"
+                  >62</span
+                >
                 <sup>left</sup>
               </div>
             </div>
@@ -173,7 +178,8 @@
                 name="amout"
                 id="blacE-amount"
                 placeholder="$"
-                class="pledge--amount"
+                class="pledge--amount blackE-amount"
+                value="75"
               />
               <button class="pledge-ctn-btn blackE-btn">Continue</button>
             </div>
@@ -200,7 +206,7 @@
               <span class="checkmark"></span>
             </label>
 
-            <div class="pledge-details pledge-details4">
+            <div class="pledge-details pledge-details2">
               <span class="head">Black Edition Stand</span>
               <span>Pledges $75 or more</span>
               <p>
@@ -218,7 +224,7 @@
 
           <!--  -->
 
-          <div class="enter-pledge mahhogany-amt none">
+          <div class="enter-pledg mahhogany-amt none">
             <p>Enter your pledge</p>
 
             <div class="amt-btn">
@@ -227,7 +233,7 @@
                 name="amout"
                 id="mahhogany-amount"
                 placeholder="$"
-                class="pledge--amount"
+                class="pledge--amount mahhogany-amount"
                 disabled
               />
               <button class="pledge-ctn-btn mahhogany-btn" disabled>
@@ -240,6 +246,20 @@
         </div>
         <!--  -->
       </section>
+
+      <!-- thank you completed -->
+
+      <div class="completed none">
+        <img src="./images/icon-check.svg" alt="checked Image" />
+        <h2>Thanks For Your support!</h2>
+        <p>
+          Your pledge brings us one step closer to sharing Mastercraft Bamboo
+          Monitor Riser worldwide. You will get an email once our campaign is
+          completed.
+        </p>
+
+        <button class="got-it">Got it!</button>
+      </div>
     </div>
     <!-- modal none -->
 
@@ -249,6 +269,13 @@
       <a href="#top"> <i class="fa-solid fa-angle-up"></i> </a>
     </button>
 
+    <!-- 
+        
+     -->
+
+    <!-- 
+        
+      -->
     <!-- container -->
     <div class="container">
       <header class="header" id="top">
@@ -297,12 +324,12 @@
         <section class="section--2">
           <div class="backed-details">
             <div class="amount-backed">
-              <h2>$89,914</h2>
+              <h2 class="total-amount-backed">$89,914</h2>
               <p>of $100,000 backed</p>
             </div>
 
             <div class="backed-count">
-              <h2>5,007</h2>
+              <h2 class="total-backers">5,007</h2>
               <p>total backers</p>
             </div>
 
@@ -350,7 +377,8 @@
 
             <div class="left-reward">
               <div class="left">
-                <span class="bamboo-no bamboo">101</span> <sup>left</sup>
+                <span class="bamboo-no bamboo-amount-left">101</span>
+                <sup>left</sup>
               </div>
 
               <button class="reward-btn reward-bamboo show-modal">
@@ -374,7 +402,8 @@
 
             <div class="left-reward">
               <div class="left">
-                <span class="bamboo-no black-edition">101</span> <sup>left</sup>
+                <span class="bamboo-no black-edition-amount-left">62</span>
+                <sup>left</sup>
               </div>
 
               <button class="reward-btn reward-back-edition show-modal">
@@ -398,10 +427,11 @@
 
             <div class="left-reward">
               <div class="left">
-                <span class="bamboo-no black-edition">0</span> <sup>left</sup>
+                <span class="bamboo-no mahogany-amount-left">0</span>
+                <sup>left</sup>
               </div>
 
-              <button class="reward-btn mahogany-btn show-modal">
+              <button class="reward-btn mahogany-btn show-modal" disabled>
                 Select reward
               </button>
             </div>
